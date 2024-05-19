@@ -92,7 +92,7 @@
   width: 100%;
   margin: -8px;
   perspective: 1000px;
-  /* background-color: blueviolet; */
+  background-color: white;
 }
 
 #me {
@@ -117,7 +117,7 @@
 #img_container {
   height: 500px;
   width: 500px;
-  position: relative;
+  position: fixed;
   /* left: 60%; */
   /* top: 100px; */
   overflow: hidden;
@@ -134,30 +134,34 @@
 
 .note {
   margin: 0%;
-  position: absolute;
+  position: fixed;
   height: fit-content;
   width: fit-content;
   font-size: 35px;
   font-family: LTBinaryNeue;
   font-weight: bold;
-  top: 20%;
-  left: 100px;
 }
 
 #transition_container {
   height: 40px;
   width: 900px;
   position: absolute;
-  left: 100px;
-  top: 31.5%;
+  /* left: 143.1px; */
+  top: 67%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: start;
 }
-
 #raise,
 #base {
   display: none;
   bottom: 50px;
+}
+#note_container{
+  height: 130px;
+  width: 800px;
+  top: 24%;
+  left: 6%;
+  position: absolute;
 }
