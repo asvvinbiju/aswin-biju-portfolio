@@ -90,4 +90,55 @@ $(document).ready(function () {
     born().then(raise).then(based).then(loop);
   }
   loop();
+
+  //page projects animation
+  
+  $("#Projects").mouseenter(function(){
+    $(this).animate({
+      // height: "300px",
+      width: "250px",
+      bottom: "50px"
+    });
+  });
+  $("#Projects").mouseleave(function(){
+    $(this).animate({
+      // height: "150px",
+      width: "200px",
+      bottom: "0"
+    });
+  });
+
+  //page About animation
+  
+  $("#About").mouseenter(function(){
+    $(this).animate({
+      // height: "300px",
+      width: "250px",
+      bottom: "50px"
+    });
+  });
+  $("#About").mouseleave(function(){
+    $(this).animate({
+      // height: "150px",
+      width: "200px",
+      bottom: "0"
+    });
+  });
+
+  //page contact animation
+  
+  $("#Contact").mouseenter(function(){
+    $(this).animate({
+      // height: "300px",
+      width: "250px",
+      bottom: "50px"
+    });
+  });
+  $("#Contact").mouseleave(function(){
+    $(this).animate({
+      // height: "150px",
+      width: "200px",
+      bottom: "0"
+    });
+  });
 });
