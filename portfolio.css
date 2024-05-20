@@ -54,44 +54,45 @@
 #pages {
   position: fixed;
   left: 3%;
-  top: 80%;
+  bottom: -100px;
   display: flex;
-  align-items: start;
-  /* padding: 50px; */
+  align-items: center;
+  justify-content: space-between;
   height: fit-content;
   width: fit-content;
-  /* padding-top: 200px; */
 }
 
 .btn_container {
   position: relative;
   height: 200px;
   width: 200px;
-  margin: 10px;
+  margin: 10px; 
   padding: 10px;
   background-color: black;
   border-radius: 20px;
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .btn {
   cursor: pointer;
   background-color: white;
   border: solid black 2px;
-  font-size: 15px;
+  font-size: 20px;
   font-family: LTBinaryNeue;
   font-weight: bold;
-  padding-left: 25px;
-  /* padding-right: 15px; */
-  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 1px;
   border-radius: 7px;
 }
 
 #mainframe {
   display: flex;
+  flex-direction: column;
   position: fixed;
   /* top: 70px; */
   height: 100%;
@@ -132,10 +133,14 @@
 
 #container {
   position: absolute;
-  height: fit-content;
-  width: fit-content;
-  left: 60%;
+  height: 600px;
+  width: 600px;
   top: 15%;
+  right: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .note {
@@ -155,9 +160,6 @@
   /* left: 143.1px; */
   top: 60%;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: start;
 }
 
 #know,
@@ -172,6 +174,10 @@
   top: 24%;
   left: 6%;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .space {

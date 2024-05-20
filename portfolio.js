@@ -111,10 +111,12 @@ $(document).ready(function () {
         bottom: "50px",
       });
       $("#pro").animate({
-        fontSize: "20px",
+        // fontSize: "20px",
         fontweight: "bold",
-        paddingleft: "25px",
-        padding: "10px",
+        paddingleft: "50px",
+        paddingright: "50px",
+        paddingtop: "10px",
+        paddingbottom: "10px",
         margin: "1px",
         borderRadius: "10px"
       });
@@ -126,10 +128,12 @@ $(document).ready(function () {
         bottom: "0"
       });
       $("#pro").animate({
-        fontSize: "15px",
+        // fontSize: "20px",
         fontweight: "bold",
-        paddingleft: "25px",
-        padding: "10px",
+        paddingleft: "40px",
+        paddingright: "40px",
+        paddingtop: "10px",
+        paddingbottom: "10px",
         margin: "1px",
         borderRadius: "7px"
       })
@@ -144,10 +148,12 @@ $(document).ready(function () {
         bottom: "50px",
       });
       $("#info").animate({
-        fontSize: "20px",
+        // fontSize: "20px",
         fontweight: "bold",
-        paddingleft: "25px",
-        padding: "10px",
+        paddingleft: "40px",
+        paddingright: "40px",
+        paddingtop: "10px",
+        paddingbottom: "10px",
         margin: "1px",
         borderRadius: "10px"
       });
@@ -159,10 +165,12 @@ $(document).ready(function () {
         bottom: "0"
       });
       $("#info").animate({
-        fontSize: "15px",
+        // fontSize: "20px",
         fontweight: "bold",
-        paddingleft: "25px",
-        padding: "10px",
+        paddingleft: "40px",
+        paddingright: "40px",
+        paddingtop: "10px",
+        paddingbottom: "10px",
         margin: "1px",
         borderRadius: "7px"
       });
@@ -177,10 +185,12 @@ $(document).ready(function () {
         bottom: "50px",
       });
       $("#cont").animate({
-        fontSize: "20px",
+        // fontSize: "20px",
         fontweight: "bold",
-        paddingleft: "25px",
-        padding: "10px",
+        paddingleft: "40px",
+        paddingright: "40px",
+        paddingtop: "10px",
+        paddingbottom: "10px",
         margin: "1px",
         borderRadius: "10px"
       });
@@ -192,10 +202,12 @@ $(document).ready(function () {
         bottom: "0"
       });
       $("#cont").animate({
-        fontSize: "15px",
+        // fontSize: "20px",
         fontweight: "bold",
-        paddingleft: "25px",
-        padding: "10px",
+        paddingleft: "40px",
+        paddingright: "40px",
+        paddingtop: "10px",
+        paddingbottom: "10px",
         margin: "1px",
         borderRadius: "7px"
       })
