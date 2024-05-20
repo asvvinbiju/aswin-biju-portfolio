@@ -215,7 +215,7 @@ $(document).ready(function () {
   }
 
   function page_open() {
-    $("#pro").click(function () {
+    $("#pro_container").click(function () {
       $("#note_container").fadeOut();
       $("#pages").animate({
         top: "100%"
@@ -226,7 +226,7 @@ $(document).ready(function () {
       });
     });
 
-    $("#info").click(function () {
+    $("#info_container").click(function () {
       $("#note_container").fadeOut();
       $("#pages").animate({
         top: "100%"
@@ -237,7 +237,7 @@ $(document).ready(function () {
       });
     });
 
-    $("#cont").click(function () {
+    $("#c_container").click(function () {
       $("#note_container").fadeOut();
       $("#pages").animate({
         top: "100%"
