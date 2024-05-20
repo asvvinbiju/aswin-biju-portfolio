@@ -52,7 +52,7 @@
 }
 
 #pages {
-  position: absolute;
+  position: fixed;
   left: 3%;
   top: 80%;
   display: flex;
@@ -60,6 +60,7 @@
   /* padding: 50px; */
   height: fit-content;
   width: fit-content;
+  /* padding-top: 200px; */
 }
 
 .btn_container {
@@ -70,19 +71,23 @@
   padding: 10px;
   background-color: black;
   border-radius: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .btn {
+  cursor: pointer;
   background-color: white;
   border: solid black 2px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: LTBinaryNeue;
   font-weight: bold;
   padding-left: 25px;
   /* padding-right: 15px; */
   padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
+  margin: 1px;
+  border-radius: 7px;
 }
 
 #mainframe {
@@ -154,15 +159,84 @@
   align-items: center;
   justify-content: start;
 }
-#raise,
-#base {
+
+#know,
+#internet {
   display: none;
   bottom: 50px;
 }
-#note_container{
+
+#note_container {
   height: 130px;
   width: 800px;
   top: 24%;
   left: 6%;
   position: absolute;
+}
+
+.space {
+  height: 550px;
+  width: 820px;
+  /* overflow: hidden; */
+  background-color: white;
+  border: 7px solid black;
+  /* opacity: 40%; */
+  top: 15%;
+  margin: -8px;
+  left: -830px;
+  position: absolute;
+  border-radius: 30px;
+}
+
+.frames {
+  height: 500px;
+  width: 800px;
+  background-color: white;
+  position: absolute;
+  overflow: auto;
+  top: 4%;
+}
+
+.h {
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  /* top: 20%; */
+  /* display: none; */
+  font-family: LTBinaryNeue;
+}
+
+.titles {
+  color: black;
+  font-family: LTBinaryNeue;
+  font-weight: bold;
+  font-size: 50px;
+  position: absolute;
+  left: 8%;
+  top: 5%;
+  /* display: none; */
+}
+
+.points {
+  font-family: LTBinaryNeue;
+  font-size: 20px;
+  position: absolute;
+  left: 80px;
+  top: 170px;
+  /* display: none; */
+}
+
+.close {
+  cursor: pointer;
+  font-family: ViaFont;
+  position: absolute;
+  left: 93%;
+  font-size: 20px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
