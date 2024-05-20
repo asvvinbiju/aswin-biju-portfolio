@@ -224,6 +224,7 @@
   position: absolute;
   left: 80px;
   top: 170px;
+  color: black;
   /* display: none; */
 }
 
@@ -233,6 +234,7 @@
   position: absolute;
   left: 93%;
   font-size: 20px;
+  color: black;
   background-color: white;
   border: 3px solid black;
   border-radius: 10px;
