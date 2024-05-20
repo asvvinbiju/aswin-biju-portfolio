@@ -143,11 +143,11 @@
 }
 
 #transition_container {
-  height: 40px;
+  height: 45px;
   width: 900px;
   position: absolute;
   /* left: 143.1px; */
-  top: 67%;
+  top: 60%;
   overflow: hidden;
   display: flex;
   align-items: center;
