@@ -176,7 +176,7 @@ $(document).ready(function () {
       });
     });
 
-    //page contact conatiner animation
+    //page contact container animation
 
     $("#c_container").mouseenter(function () {
       $(this).animate({
@@ -217,6 +217,7 @@ $(document).ready(function () {
   function page_open() {
     $("#pro_container").click(function () {
       $("#note_container").fadeOut();
+      $("#job").fadeOut();
       $("#pages").animate({
         top: "100%"
       }, function () {
@@ -225,9 +226,10 @@ $(document).ready(function () {
         });
       });
     });
-
+    
     $("#info_container").click(function () {
       $("#note_container").fadeOut();
+      $("#job").fadeOut();
       $("#pages").animate({
         top: "100%"
       }, function () {
@@ -236,9 +238,10 @@ $(document).ready(function () {
         });
       });
     });
-
+    
     $("#c_container").click(function () {
       $("#note_container").fadeOut();
+      $("#job").fadeOut();
       $("#pages").animate({
         top: "100%"
       }, function () {
@@ -256,6 +259,7 @@ $(document).ready(function () {
         left: "-830px"
       }, function () {
         $("#note_container").fadeIn(1000);
+        $("#job").fadeIn(1000);
         $("#pages").animate({
           top: "80%"
         }, 1000);
@@ -267,17 +271,19 @@ $(document).ready(function () {
         left: "-830px"
       }, function () {
         $("#note_container").fadeIn(1000);
+        $("#job").fadeIn(1000);
         $("#pages").animate({
           top: "80%"
         }, 1000);
       })
     })
-
+    
     $("#cont_close").click(function () {
       $("#cont_frame").animate({
         left: "-830px"
       }, function () {
         $("#note_container").fadeIn(1000);
+        $("#job").fadeIn(1000);
         $("#pages").animate({
           top: "80%"
         }, 1000);

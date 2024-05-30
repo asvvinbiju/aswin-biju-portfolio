@@ -1,3 +1,5 @@
+/* BinaryNeue Font */
+
 @font-face {
   font-family: "LTBinaryNeue";
   src: url("Fonts/LTBinaryNeue.ttf");
@@ -12,9 +14,50 @@
   font-style: normal;
 }
 
+/* Saeada Font */
+
+@font-face {
+  font-family: "LTSaeada-Regular";
+  src: url("Fonts/LTSaeada-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LTSaeada-Bold";
+  src: url("Fonts/LTSaeada-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Soul Font */
+
+@font-face {
+  font-family: "LTSoul-Regular";
+  src: url("Fonts/LTSoul-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LTSoul-Bold";
+  src: url("Fonts/LTSoul-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Via Font */
+
 @font-face {
   font-family: "Viafont";
   src: url("Fonts/Viafont.ttf") format("truetype");
+}
+
+/* Santello Font */
+
+@font-face {
+  font-family: "SANTELLO";
+  src: url("Fonts/SANTELLO.ttf") format("truetype");
 }
 
 @keyframes crone {
@@ -54,10 +97,11 @@
 #pages {
   position: fixed;
   left: 3%;
-  bottom: -100px;
+  /* bottom: -150px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* align-self: ce; */
   height: fit-content;
   width: fit-content;
 }
@@ -80,7 +124,7 @@
   background-color: white;
   border: solid black 2px;
   font-size: 20px;
-  font-family: LTBinaryNeue;
+  font-family: ViaFont;
   font-weight: bold;
   padding-left: 40px;
   padding-right: 40px;
@@ -93,6 +137,7 @@
 #mainframe {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   position: fixed;
   /* top: 70px; */
   height: 100%;
@@ -132,15 +177,16 @@
 }
 
 #container {
-  position: absolute;
+  /* position: absolute; */
   height: 600px;
   width: 600px;
-  top: 15%;
-  right: 7%;
-  display: flex;
-  flex-direction: row;
+  /* top: 15%;
+  right: 7%; */
+  /* display: flex; */
+  /* flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; */
+  align-self: flex-end;
 }
 
 .note {
@@ -149,8 +195,8 @@
   height: fit-content;
   width: fit-content;
   font-size: 35px;
-  font-family: LTBinaryNeue;
-  font-weight: bold;
+  font-family: LTSaeada-Regular;
+  /* font-weight: bold; */
 }
 
 #transition_container {
@@ -158,7 +204,7 @@
   width: 900px;
   position: absolute;
   /* left: 143.1px; */
-  top: 60%;
+  top: 52%;
   overflow: hidden;
 }
 
@@ -171,8 +217,8 @@
 #note_container {
   height: 130px;
   width: 800px;
-  top: 24%;
-  left: 6%;
+  top: 50%;
+  left: 11%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -205,15 +251,15 @@
 
 .h {
   color: black;
+  font-family: LTSoul-Regular;
   font-size: 30px;
   position: absolute;
   left: 80px;
   /* top: 20%; */
   /* display: none; */
-  font-family: LTBinaryNeue;
 }
 
-.titles {
+/* .titles {
   color: black;
   font-family: LTBinaryNeue;
   font-weight: bold;
@@ -221,18 +267,16 @@
   position: absolute;
   left: 8%;
   top: 5%;
-  /* display: none; */
-}
+} */
 
-.points {
+/* .points {
   font-family: LTBinaryNeue;
   font-size: 20px;
   position: absolute;
   left: 80px;
   top: 170px;
   color: black;
-  /* display: none; */
-}
+} */
 
 .close {
   cursor: pointer;
