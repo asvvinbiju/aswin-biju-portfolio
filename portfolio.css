@@ -1,51 +1,3 @@
-/* BinaryNeue Font */
-
-@font-face {
-  font-family: "LTBinaryNeue";
-  src: url("Fonts/LTBinaryNeue.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LTBinaryNeue";
-  src: url("Fonts/LTBinaryNeue-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Saeada Font */
-
-@font-face {
-  font-family: "LTSaeada-Regular";
-  src: url("Fonts/LTSaeada-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LTSaeada-Bold";
-  src: url("Fonts/LTSaeada-Bold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Soul Font */
-
-@font-face {
-  font-family: "LTSoul-Regular";
-  src: url("Fonts/LTSoul-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LTSoul-Bold";
-  src: url("Fonts/LTSoul-Bold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /* Via Font */
 
 @font-face {
@@ -53,245 +5,155 @@
   src: url("Fonts/Viafont.ttf") format("truetype");
 }
 
-/* Santello Font */
+/* Christmas Sans */
 
 @font-face {
-  font-family: "SANTELLO";
-  src: url("Fonts/SANTELLO.ttf") format("truetype");
+  font-family: "Christmas";
+  src: url("Fonts/Christmas\ Combine\ Sans.ttf") format("truetype");
 }
 
-@keyframes crone {
-  0% {
-    transform: translate3d(0, 0, 0);
-    /* transform: translateX(0); */
-  }
+/* Gelline */
 
-  50% {
-    transform: translate3d(-20px, 20px, 0);
-    /* transform:translateX(40px); */
-  }
-
-  100% {
-    /* transform:translateX(0); */
-    transform: translate3d(0);
-  }
+@font-face {
+  font-family: "Gelline";
+  src: url("Fonts/Gelline.otf") format("truetype");
 }
 
-@keyframes crtwo {
-  0% {
-    transform: translate3d(0, 0, 0);
-    /* transform: translateX(0); */
-  }
+/* Nauman */
 
-  50% {
-    transform: translate3d(20px, -20px, 0);
-    /* transform:translateX(40px); */
-  }
-
-  100% {
-    /* transform:translateX(0); */
-    transform: translate3d(0, 0, 0);
-  }
+@font-face {
+  font-family: "Nauman";
+  src: url("Fonts/Nauman-Regular.ttf") format("truetype");
 }
 
-#pages {
-  position: fixed;
-  left: 3%;
-  bottom: -100px;
+body{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* align-self: ce; */
-  height: fit-content;
-  width: fit-content;
-}
-
-.btn_container {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  margin: 10px; 
-  padding: 10px;
-  background-color: black;
-  border-radius: 20px;
-  display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-image: url("texture.svg");
+  background-repeat: repeat;
 }
-
-.btn {
-  /* cursor: pointer; */
-  background-color: white;
-  border: solid black 2px;
-  font-size: 20px;
-  font-family: ViaFont;
-  font-weight: bold;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 1px;
-  border-radius: 7px;
-}
-
 #mainframe {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: fixed;
-  /* top: 70px; */
-  height: 100%;
-  width: 100%;
-  margin: -8px;
-  perspective: 1000px;
-  background-color: white;
+  /* position: fixed; */
+  margin: 1.3%;
+  height: 700px;
+  width: 97.5%;
+  /* top: 3%;
+  left: 3%; */
+  /* overflow: auto; */
+  /* margin: -8px; */
+  background-color: #EEDD82;
+  background-image: url("topography.svg");
+  background-repeat: repeat;
+  border: 2px dashed black;
+}
+
+#ab{
+  position: absolute;
+  left: 3%;
+  top: 4%;
+  font-size: 40px;
+  font-family: Viafont;
 }
 
 #me {
   height: 500px;
-  width: 600px;
-  position: absolute;
-  right: 100%;
-  /* border-radius: 50%; */
-  /* top: 100px; */
-  /* display: none; */
-}
-
-.circle {
-  height: 499px;
-  width: 499px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: black;
-  display: none;
+  width: 520px;
+  /* position: absolute; */
+  left: -30px;
+  bottom: 0;
 }
 
 #img_container {
   height: 500px;
-  width: 500px;
-  position: fixed;
+  width: 420px;
+  /* position: absolute; */
+  /* top: 20%;
+  right: 130px; */
   /* left: 60%; */
   /* top: 100px; */
   overflow: hidden;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#container {
-  /* position: absolute; */
-  height: 600px;
-  width: 600px;
-  /* top: 15%;
-  right: 7%; */
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: flex-end;
-  align-items: center; */
-  align-self: flex-end;
-}
 
 .note {
   margin: 0%;
-  position: fixed;
+  /* position: absolute; */
   height: fit-content;
   width: fit-content;
-  font-size: 35px;
-  font-family: LTSaeada-Regular;
-  /* font-weight: bold; */
-}
-
-#transition_container {
-  height: 45px;
-  width: 900px;
-  position: absolute;
-  /* left: 143.1px; */
-  top: 52%;
-  overflow: hidden;
-}
-
-#know,
-#internet {
-  display: none;
-  bottom: 50px;
+  font-size: 23px;
+  font-family: Christmas;
+  font-weight: bold;
 }
 
 #note_container {
-  height: 130px;
-  width: 800px;
-  top: 50%;
-  left: 11%;
-  position: absolute;
+  height: 300px;
+  width: 700px;
+  /* top: 30%;
+  left: 10%;
+  position: absolute; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
-.space {
-  height: 550px;
-  width: 820px;
-  /* overflow: hidden; */
-  background-color: white;
-  border: 7px solid black;
-  /* opacity: 40%; */
-  top: 15%;
-  margin: -8px;
-  left: -830px;
+.text_img{
   position: absolute;
-  border-radius: 30px;
+  top: 18%;
+  left: 10%;
+  height: 500px; 
+  width: 1230px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
 }
 
-.frames {
-  height: 500px;
-  width: 800px;
-  background-color: white;
-  position: absolute;
-  overflow: auto;
-  top: 4%;
+.topics{
+  margin-top: 20px;
+  height: max-content;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.h {
-  color: black;
-  font-family: LTSoul-Regular;
-  font-size: 30px;
-  position: absolute;
-  left: 80px;
-  /* top: 20%; */
-  /* display: none; */
-}
-
-/* .titles {
-  color: black;
-  font-family: LTBinaryNeue;
-  font-weight: bold;
-  font-size: 50px;
-  position: absolute;
-  left: 8%;
-  top: 5%;
-} */
-
-/* .points {
-  font-family: LTBinaryNeue;
-  font-size: 20px;
-  position: absolute;
-  left: 80px;
-  top: 170px;
-  color: black;
-} */
-
-.close {
-  cursor: pointer;
+.head_one{
+  font-size: 70px;
   font-family: ViaFont;
-  position: absolute;
-  left: 93%;
-  font-size: 20px;
-  color: black;
-  background-color: white;
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
-#pro_container, #info_container, #c_container{
-  cursor: pointer;
+
+.head_two{
+  font-size: 50px;
+  font-family: Gelline;
+}
+
+.head_three{
+  font-size: 20px;
+  font-family: Nauman;
+}
+.border-dashed{
+  border: 2px dashed black;
+}
+
+.inst{
+  font-size: 25px;
+  font-family: Nausan;
+  position: relative;
+  left: 50px;
+  bottom: 35px;
+}
+
+.para{
+  font-size: 20px;
+  font-family: Nausan;
 }

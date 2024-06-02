@@ -7,105 +7,95 @@
   <title>Aswin Biju - Portfolio</title>
   <script src="j_query.js"></script>
   <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="background-color: #EEDD82;">
   <div id="mainframe">
-    <div id="container">
-      <div class="circle" id="circleone"></div>
-      <div class="circle" id="circletwo"></div>
+    <label id="ab">AB</label>
+    <div class="text_img">
+      <div id="note_container">
+        <p class="note">Born, Raised, Based In Alappuzha.</p>
+        <h1 id="job" style="font-family: Impact; font-size: 90px;">PYTHON FULL STACK<br>WEB DEVELOPER</h1>
+      </div>
       <div id="img_container">
-        <img src="me.png" alt="Aswin Biju" id="me" />
+        <img src="PSX_20240602_124506.jpg" alt="Aswin Biju" id="me" />
       </div>
     </div>
-    <div id="note_container">
-      <p class="note">Born, Raised, Based in alappuzha.<br>if you are here that means...</p>
-      <div id="transition_container">
-        <p id="frnd" style="
-              font-family: LTSaeada-Regular;
-              font-size: 35px;
-              position: absolute;
-              ">
-          You are my friend.🥰🥰
-        </p>
-        <p id="know" style="
-              font-family: LTSaeada-Regular;
-              font-size: 35px;
-              position: absolute;
-              ">
-          You know me.😁
-        </p>
-        <p id="internet" style="
-              font-family: LTSaeada-Regular;
-              font-size: 35px;
-              position: absolute;
-              ">
-          You took a wrong turn from the internet.😒
-        </p>
-      </div>
+  </div>
+  <div class="topics">
+    <h1 class="head_one">Projects</h1>
+    <div class="container mt-5 border-dashed">
+      <h1 class="head_two m-4">Command line To-Do list App</h1>
+      <ul class="head_three m-3 pb-3">
+        <li>Developed a dynamic to-do list app using python.</li>
+        <li>Features include adding, deleting, updating tasks, setting deadlines, and marking tasks as completed.</li>
+        <li>Utilized object-oriented programming for code organization.</li>
+        <li>Implemented data serialization for saving and loading tasks lists.</li>
+        <li>Improved proficiency in Python, data management, and problem-solving.</li>
+      </ul>
     </div>
-    <!-- <p class="note" style="top: 200px; left: 720px;">in</p> -->
-    <!-- <p class="note">alappuzha.</p> -->
-    <div id="pages">
-      <button class="btn_container" id="pro_container">
-        <div class="btn" id="pro">Work</div>
-      </button>
-      <button class="btn_container" id="info_container">
-        <div class="btn" id="info">About</div>
-      </button>
-      <button class="btn_container" id="c_container">
-        <div class="btn" id="cont">Contact</div>
-      </button>
+    <div class="container mt-5 border-dashed">
+      <h1 class="head_two m-4">Pymail</h1>
+      <ul class="head_three m-3 pb-3">
+        <li>Developed a Python-based emailing program using PyQt5 to provide a user-friendly interface for email composition and sending.</li>
+        <li>Implemented functionality for users to securely store their email credentials within the program, ensuring seamless email sending without the need for repeated authentication.</li>
+        <li>Leveraged PyQt5 to create a file dialog GUI, allowing users to easily browse and select files from their local storage to attach to their emails.</li>
+      </ul>
     </div>
-    <label style="
-          position: fixed;
-          left: 3%;
-          top: 3%;
-          font-size: 40px;
-          font-family: Viafont;
-          " id="ab">
-      AB
-    </label>
-    <div id="pro_frame" class="space">
-      <div class="frames">
-        <button class="close" id="pro_close">X</button>
-        <h1 class="h">Nothings here</h1>
-        <!-- <label id="pro_title" class="titles">Projects</label>
-          <h1 class="h" style="top: 100px;">Command line To-Do list App</h1>
-          <ul class="points" style="top: 170px;">
-            <li>Developed a dtnamic to-do list app using python.</li>
-            <li>Features include adding, deleting, updating tasks, setting deadlines, and marking tasks as completed.
-            </li>
-          <li>Utilized object-oriented programming for code organization.</li>
-          <li>Implemented data serialization for saving and loading task lists.</li>
-          <li>Improved proficiency in Python, data management, and problem-solving.</li>
-        </ul>
-        <h1 class="h" style="top: 410px;">Pymail</h1>
-        <ul class="points" style="top: 480px;">
-          <li>Developed a Python-based emailing program using PyQt5 to provide a user friendly interface for email
-            composition and sending</li>
-            <li>Implemented funtionality for users to store their email credentials within the program, ensuring seamless
-              email sending without the need for repeated authentication.</li>
-              <li>Leveraged PyQt5 to create a file dialog GUI, allowing users to easily browse and select files from their
-                local storage to attach to their emails.</li>
-              </ul> -->
-            </div>
-          </div>
-          <div id="info_frame" class="space">
-            <div class="frames">
-              <button class="close" id="info_close">X</button>
-              <h1 class="h">Nothings here</h1>
-            </div>
-          </div>
-          <div id="cont_frame" class="space">
-            <div class="frames">
-              <button class="close" id="cont_close">X</button>
-        <h1 class="h">Nothings here</h1>
-      </div>
+  </div>
+  <div class="topics">
+    <h1 class="head_one mt-4">Education</h1>
+    <div class="container mt-5 border-dashed topics">
+      <h1 class="head_two m-4">Diploma in Computer Engineering</h1>
+      <h4 style="font-family: Gelline; align-self: flex-end; padding-right: 30px;">Nov 2020 - June 2023</h4>
+      <h1 class="inst">Carmel Polytechnic College, Alappuzha</h1>
+      <ul class="head_three m-3 pb-3">
+        <li>Completed coursework covering various aspects of computer engineering, including programming languages, hardware fundamentals, and software development methodologies.</li>
+        <li>Engaged in practical projects and laboratory sessions to reinforce theoretical knowledge and develop practical skills.</li>
+      </ul>
     </div>
-    <h1 id="job" style="position: absolute; top: 17%; left: 10%; font-family: LTSoul-Regular; font-size: 70px;">Python Full Stack<br>Web Developer,</h1>
+
+    <div class="container mt-5 border-dashed topics">
+      <h1 class="head_two m-4">Python Full Stack Web Developement Internship</h1>
+      <h4 style="font-family: Gelline; align-self: flex-end; padding-right: 30px;">Dec 2023 - June 2024</h4>
+      <h1 class="inst">Quest Innovative Solutions, Ernakulam</h1>
+      <ul class="head_three m-3 pb-3">
+        <li>Six months Python Full Stack Web Development</li>
+      </ul>
+    </div>
+  </div>
+  <div class="topics">
+    <h1 class="head_one mt-4">About</h1>
+    <p class="head_three p-3">Hello! I'm a passionate Python full-stack developer based in Alappuzha, Kerala, India. With a love for coding, video games, and movies, I'm constantly exploring new technologies and building exciting projects. Whether it's crafting elegant back-end solutions or designing intuitive front-end interfaces, I thrive on turning ideas into reality.</p>
+    <h3 class="head_two">My Journey</h3>
+    <ul class="head_three p-4">
+      <li><b>Coding Enthusiast:</b>From my early days of learning Python to diving into web development, I've enjoyed every step of the journey. Solving problems and creating efficient, scalable applications is my forte.</li>
+      <li><b>Gamer at Heart</b>When I'm not immersed in code, you'll find me battling dragons in fantasy realms or strategizing in competitive multiplayer games. Gaming fuels my creativity and keeps me sharp.</li>
+      <li><b>Movie Buff</b>Movies are my escape—a chance to explore different worlds, emotions, and stories. Whether it's sci-fi, drama, or comedy, I appreciate the art of storytelling.</li>
+    </ul>
+    <h3 class="head_two">My Skills</h3>
+    <ul class="head_three p-4">
+      <li><b>Front-End:</b>  HTML, CSS, JavaScript</li>
+      <li><b>Back-End:</b>  Python, Django</li>
+      <li><b>Database:</b>  MySQL</li>
+      <li><b>Version Control:</b>  Git</li>
+    </ul>
+    <h3 class="head_two">Let's Connect!</h3>
+    <p class="head_three p-3">Feel free to reach out—I'm always up for discussing exciting projects, collaborating, or sharing coding tips. You can find me on LinkedIn or drop me an email. Let's build something amazing together!</p>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="display: flex; justify-content: space-around; margin: 60px; align-items: center; width: 150px; height: 50px;">
+      <img src="icons/icons8-instagram.svg" alt="instagram">
+      <p style="align-self: flex-start; padding-left: 10px; font-family: Gelline; font-size: 30px;">asvvinbiju</p>
+    </div>
+    <div style="display: flex; justify-content: space-around; margin: 60px; align-items: center; width: 150px; height: 50px;">
+      <img src="icons/icons8-gmail.svg" alt="instagram">
+      <p style="align-self: flex-start; padding-left: 10px; font-family: Gelline; font-size: 30px;">aswinnbijuu@gmail.com</p>
+    </div>
   </div>
   <script src="portfolio.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
