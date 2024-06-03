@@ -26,6 +26,8 @@
   src: url("Fonts/Nauman-Regular.ttf") format("truetype");
 }
 
+/* Default Size */
+
 body{
   display: flex;
   flex-direction: column;
