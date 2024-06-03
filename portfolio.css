@@ -39,10 +39,11 @@ body{
 }
 #mainframe {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
   margin: 20px;
-  padding: 20px;
+  /* padding: 50px; */
   width: calc(100% - 40px);
   box-sizing: border-box;
   height: 700px;
@@ -50,6 +51,7 @@ body{
   background-image: url("topography.svg");
   background-repeat: repeat;
   border: 2px dashed black;
+  overflow: hidden;
 }
 
 #ab{
@@ -74,6 +76,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-end;
 }
 
 
@@ -106,11 +109,42 @@ body{
 }
 
 .text_img{
-  height: 500px; 
+  height: 550px; 
   width: 1230px; 
-  display: flex; 
+  display: flex;
+  align-self: center;
   justify-content: space-between; 
   align-items: center;
+}
+
+.navitems{
+  height: min-content;
+  width: min-content;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbar{
+  height: 70px;
+  width: 490px;
+  /* margin-top: 80px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  background-image: url("texture.svg");
+  background-color: #EEDD82;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 70px;
+  font-family: Gelline;
+  color: black;
+  align-self: flex-start;
+  /* position: absolute;
+  bottom: 7%;
+  left: 9%; */
 }
 
 .topics{
@@ -130,7 +164,7 @@ body{
 }
 
 .head_two{
-  font-size: 50px;
+  font-size: 45px;
   font-family: Gelline;
 }
 
@@ -145,50 +179,34 @@ body{
 .inst{
   font-size: 25px;
   font-family: Nauman;
-  font-weight: bold;
+  /* font-weight: bold; */
   position: relative;
   left: 50px;
   bottom: 35px;
 }
 
 .para{
-  font-size: 20px;
+  font-size: 30px;
   font-family: Nausan;
-}
-
-.sections{
-  height: max-content;
-  width: 600px;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 40px;
-  background-image: url("texture.svg");
-  background-color: #EEDD82;
-  padding-bottom: 6px;
-  margin: 0%;
-  font-family: Gelline;
-  color: black;
-  position: absolute;
-  bottom: 7%;
-  left: 9%;
 }
 
 .social{
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  width: 100%;
+  width: 900px;
 }
 .social_contents{
   display: flex; 
   justify-content: space-around; 
-  margin: 60px; 
+  margin: 40px; 
   align-items: center; 
   width: max-content; 
   height: 50px;
 }
 
 .social_labels{
+  width: max-content;
   align-self: flex-start; 
   padding-left: 10px; 
   font-family: Gelline; 
@@ -199,11 +217,12 @@ body{
 
 /* For Mobile Devices */
 
-@media screen and (max-width: 1000px) and (min-width: 600px){
+@media screen and (max-width: 1000px) and (min-width: 751px){
   #mainframe {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     margin: 10px;
     padding: 20px;
     height: 390px;
@@ -270,10 +289,36 @@ body{
   
   .text_img{
     height: 250px; 
-    width: 590px; 
+    width: 600px; 
+    margin-top: 40px;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+  }
+
+  .navitems{
+    height: min-content;
+    width: min-content;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .navbar{
+    height: 40px; 
+    width: 320px; 
+    background-color: #EEDD82; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    font-size: 20px; 
+    font-family: Gelline; 
+    color: black;
+    background-image: url('texture.svg'); 
+    background-color: #EEDD82;
+    align-self: flex-start;
   }
 
   .topics{
@@ -308,7 +353,7 @@ body{
   .inst{
     font-size: 17px;
     font-family: Nauman;
-    font-weight: bold;
+    /* font-weight: bold; */
     position: relative;
     left: 50px;
     bottom: 35px;
@@ -319,19 +364,183 @@ body{
     font-family: Nausan;
   }
   
-  .sections{
-    height: max-content;
-    width: 250px;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 16px;
-    background-image: url("texture.svg");
-    background-color: #EEDD82;
-    font-family: Gelline;
-    color: black;
-      bottom: 10%;
-      left: 9%;
+  
+  .social{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 500px;
+    height: 200px;
   }
+  .social_contents{
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    width: max-content; 
+    height: 50px;
+    margin: 20px;
+    padding: 0%;
+  }
+  
+  .social_labels{
+    align-self: center;
+    padding-left: 10px; 
+    font-family: Gelline; 
+    font-size: 20px; 
+    text-decoration: none; 
+    color: black;
+    width: max-content;
+  }
+  .icons{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) and (min-width:600px){
+  #mainframe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    height: 355px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    background-color: #EEDD82;
+    background-image: url("topography.svg");
+    background-repeat: repeat;
+    border: 2px dashed black;
+  }
+  
+  #ab{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 25px;
+    font-family: Viafont;
+  }
+  
+  #me {
+    height: 200px;
+    width: 220px;
+    left: -30px;
+    bottom: 0;
+  }
+  
+  #img_container {
+    height: 220px;
+    width: 180px;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .note {
+    margin: 0%;
+    height: max-content;
+    width: max-content;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 9px;
+    background-color: #EEDD82;
+    background-image: url("texture.svg");
+    font-family: Christmas;
+    font-weight: bold;
+  }
+  
+  #note_container {
+    margin: 0%;
+    padding: 0%;
+    height: 100px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .job{
+    font-family: Impact; 
+    font-size: 35px;
+  }
+  
+  .text_img{
+    height: 320px; 
+    width: 550px; 
+    margin: 0%;
+    padding: 0%;
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+  }
+
+  .navbar{
+    height: 40px; 
+    width: 300px; 
+    background-color: #EEDD82; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px;
+    font-size: 18px; 
+    font-family: Gelline; 
+    color: black;
+    background-image: url('texture.svg'); 
+    background-color: #EEDD82;
+    align-self: flex-start;
+    margin: 0%;
+  }
+
+  .topics{
+    margin-top: 20px;
+    height: max-content;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .head_one{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: ViaFont;
+  }
+  
+  .head_two{
+    font-size: 30px;
+    font-family: Gelline;
+  }
+  
+  .head_three{
+    font-size: 15px;
+    font-family: Nauman;
+  }
+  .border-dashed{
+    border: 2px dashed black;
+  }
+  
+  .inst{
+    font-size: 17px;
+    font-family: Nauman;
+    /* font-weight: bold; */
+    position: relative;
+    left: 40px;
+    bottom: 28px;
+  }
+  
+  .para{
+    font-size: 14px;
+    font-family: Nausan;
+  }
+  
   
   .social{
     display: flex; 
