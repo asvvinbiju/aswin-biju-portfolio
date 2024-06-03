@@ -26,6 +26,13 @@
   src: url("Fonts/Nauman-Regular.ttf") format("truetype");
 }
 
+/* Impact */
+
+@font-face {
+  font-family: "Impact-New";
+  src: url("Fonts/unicode.impact.ttf") format("truetype");
+}
+
 /* Default Size */
 
 body{
@@ -104,7 +111,7 @@ body{
 }
 
 .job{
-  font-family: Impact; 
+  font-family: Impact-New; 
   font-size: 90px;
 }
 
