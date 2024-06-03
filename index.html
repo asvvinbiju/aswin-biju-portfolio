@@ -13,20 +13,26 @@
 <body style="background-color: #EEDD82;">
   <div id="mainframe">
     <label id="ab">AB</label>
-    <!-- <div class="text_img"> -->
-    <div id="note_container">
-      <p class="note">Born, Raised, Based In Alappuzha.</p>
-      <h1 id="job" style="font-family: Impact; font-size: 90px;">PYTHON FULL STACK<br>WEB DEVELOPER</h1>
+    <div class="sections">
+      <a href="#pro" style="color: black;">PROJECTS</a>
+      <a href="#edu" style="color: black;">EDUCATION</a>
+      <a href="#abou" style="color: black;">ABOUT</a>
+      <a href="#cont" style="color: black;">CONTACT</a>
     </div>
-    <div id="img_container">
-      <img src="PSX_20240602_124506.jpg" alt="Aswin Biju" id="me" />
+    <div class="text_img">
+      <div id="note_container">
+        <p class="note">Born, Raised, Based In Alappuzha.</p>
+        <h1 class="job">PYTHON FULL STACK<br>WEB DEVELOPER</h1>
+      </div>
+      <div id="img_container">
+        <img src="PSX_20240602_124506.jpg" alt="Aswin Biju" id="me" />
+      </div>
     </div>
-    <!-- </div> -->
   </div>
-  <div class="topics">
+  <div class="topics" id="pro">
     <h1 class="head_one">Projects</h1>
     <div class="container mt-5 border-dashed">
-      <h1 class="head_two m-4">Command line To-Do list App</h1>
+      <h1 class="head_two m-4">COMMAND LINE TO-DO LIST APP</h1>
       <ul class="head_three m-3 pb-3">
         <li>Developed a dynamic to-do list app using python.</li>
         <li>Features include adding, deleting, updating tasks, setting deadlines, and marking tasks as completed.</li>
@@ -36,7 +42,7 @@
       </ul>
     </div>
     <div class="container mt-5 border-dashed">
-      <h1 class="head_two m-4">Pymail</h1>
+      <h1 class="head_two m-4">PYMAIL</h1>
       <ul class="head_three m-3 pb-3">
         <li>Developed a Python-based emailing program using PyQt5 to provide a user-friendly interface for email composition and sending.</li>
         <li>Implemented functionality for users to securely store their email credentials within the program, ensuring seamless email sending without the need for repeated authentication.</li>
@@ -44,11 +50,11 @@
       </ul>
     </div>
   </div>
-  <div class="topics">
+  <div class="topics" id="edu">
     <h1 class="head_one mt-4">Education</h1>
     <div class="container mt-5 border-dashed topics">
-      <h1 class="head_two m-4">Diploma in Computer Engineering</h1>
-      <h4 style="font-family: Gelline; align-self: flex-end; padding-right: 30px;">Nov 2020 - June 2023</h4>
+      <h1 class="head_two m-4">DIPLOMA IN COMPUTER ENGINEERING</h1>
+      <h4 style="font-family: Gelline; align-self: flex-end; padding-right: 30px;" class="para">NOV 2020 - JUNE 2023</h4>
       <h1 class="inst">Carmel Polytechnic College, Alappuzha</h1>
       <ul class="head_three m-3 pb-3">
         <li>Completed coursework covering various aspects of computer engineering, including programming languages, hardware fundamentals, and software development methodologies.</li>
@@ -57,15 +63,15 @@
     </div>
 
     <div class="container mt-5 border-dashed topics">
-      <h1 class="head_two m-4">Python Full Stack Web Developement Internship</h1>
-      <h4 style="font-family: Gelline; align-self: flex-end; padding-right: 30px;">Dec 2023 - June 2024</h4>
+      <h1 class="head_two m-4">PYTHON FULL STACK WEB DEVELOPEMENT INTERNSHIP</h1>
+      <h4 style="font-family: Gelline; align-self: flex-end; padding-right: 30px;" class="para">DEC 2023 - JUNE 2024</h4>
       <h1 class="inst">Quest Innovative Solutions, Ernakulam</h1>
       <ul class="head_three m-3 pb-3">
         <li>Six months Python Full Stack Web Development</li>
       </ul>
     </div>
   </div>
-  <div class="topics">
+  <div class="topics" id="abou">
     <h1 class="head_one mt-4">About</h1>
     <p class="head_three p-3">Hello! I'm a passionate Python full-stack developer based in Alappuzha, Kerala, India. With a love for coding, video games, and movies, I'm constantly exploring new technologies and building exciting projects. Whether it's crafting elegant back-end solutions or designing intuitive front-end interfaces, I thrive on turning ideas into reality.</p>
     <h3 class="head_two">My Journey</h3>
@@ -84,18 +90,18 @@
     <h3 class="head_two">Let's Connect!</h3>
     <p class="head_three p-3">Feel free to reach out—I'm always up for discussing exciting projects, collaborating, or sharing coding tips. You can find me on LinkedIn or drop me an email. Let's build something amazing together!</p>
   </div>
-  <div style="display: flex; justify-content: center;; align-items: center; width: 100%;">
-    <div style="display: flex; justify-content: space-around; margin: 60px; align-items: center; width: max-content; height: 50px;">
-      <img src="icons/icons8-instagram.svg" alt="instagram">
-      <p style="align-self: flex-start; padding-left: 10px; font-family: Gelline; font-size: 30px;">asvvinbiju</p>
+  <div class="social" id="cont">
+    <div class="social_contents">
+      <img src="icons/icons8-instagram.svg" class="icons" alt="instagram">
+      <a class="social_labels" href="https://www.instagram.com/asvvinbiju?igsh=MWU3ZnN6MmRjdWFhNw==" target="_blank">asvvinbiju</a>
     </div>
-    <div style="display: flex; justify-content: space-around; margin: 60px; align-items: center; width: max-content; height: 50px;">
-      <img src="icons/icons8-gmail.svg" alt="instagram">
-      <p style="align-self: flex-start; padding-left: 10px; font-family: Gelline; font-size: 30px;">aswinnbijuu@gmail.com</p>
+    <div class="social_contents">
+      <img src="icons/icons8-gmail.svg" class="icons" alt="instagram">
+      <a class="social_labels" href="mailto:aswinnbijuu@gmail.com" target="_blank">aswinnbijuu@gmail.com</a>
     </div>
-    <div style="display: flex; justify-content: space-around; margin: 60px; align-items: center; width: max-content; height: 50px;">
-      <img src="icons/icons8-linkedin.svg" alt="instagram">
-      <p style="align-self: flex-start; padding-left: 10px; font-family: Gelline; font-size: 30px;">https://www.linkedin.com/in/aswin-biju-925221288</p>
+    <div class="social_contents">
+      <img src="icons/icons8-linkedin.svg" class="icons" alt="instagram">
+      <a class="social_labels" href="https://www.linkedin.com/in/aswin-biju-925221288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">aswin-biju</a>
     </div>
   </div>
   <script src="portfolio.js"></script>
