@@ -62,10 +62,12 @@ body{
 }
 
 #ab{
-  position: absolute;
+  /* position: absolute;
   left: 3%;
-  top: 4%;
+  top: 4%; */
   font-size: 40px;
+  align-self: flex-start;
+  margin-left: 25px;
   font-family: Viafont;
 }
 
@@ -132,7 +134,7 @@ body{
 }
 
 .navbar{
-  height: 70px;
+  height: 65px;
   width: 490px;
   /* margin-top: 80px; */
   display: flex;
@@ -146,6 +148,7 @@ body{
   padding-top: 0;
   padding-bottom: 0;
   margin-left: 70px;
+  margin-bottom: 20px;
   font-family: Gelline;
   color: black;
   align-self: flex-start;
@@ -231,7 +234,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     height: 390px;
     width: calc(100% - 30px);
     box-sizing: border-box;
@@ -242,9 +245,13 @@ body{
   }
   
   #ab{
-    position: absolute;
+    /* position: absolute;
     left: 3.5%;
-    top: 5%;
+    top: 5%; */
+    align-self: flex-start;
+    /* margin-left: 60px; */
+    margin-left: 15px;
+    margin-top: 5px;
     font-size: 25px;
     font-family: Viafont;
   }
@@ -297,7 +304,7 @@ body{
   .text_img{
     height: 250px; 
     width: 600px; 
-    margin-top: 40px;
+    /* margin-top: 40px; */
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -320,6 +327,7 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 20px;
+    margin-bottom: 10px;
     font-size: 20px; 
     font-family: Gelline; 
     color: black;
@@ -411,7 +419,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     height: 355px;
     width: calc(100% - 30px);
     box-sizing: border-box;
@@ -422,9 +430,11 @@ body{
   }
   
   #ab{
-    position: absolute;
+    /* position: absolute;
     left: 5%;
-    top: 5%;
+    top: 5%; */
+    align-self: flex-start;
+    margin-left: 10px;
     font-size: 25px;
     font-family: Viafont;
   }
@@ -502,7 +512,8 @@ body{
     background-image: url('texture.svg'); 
     background-color: #EEDD82;
     align-self: flex-start;
-    margin: 0%;
+    margin-bottom: 10px;
+    margin-left: 20px;
   }
 
   .topics{
